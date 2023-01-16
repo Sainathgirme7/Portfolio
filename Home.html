@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+
+
+        .main {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url("cc-bg-1.jpg");
+            filter: brightness(100%);
+            background-size: cover;
+            height: 700px;
+            border: 1px solid transparent;
+        }
+
+        .left {
+            display: inl;
+            float: left;
+            margin: 5px 0px px 10px;
+            color: white;
+            margin: 4vh;
+            position: absolute;
+        }
+
+        .right {
+            float: right;
+            color: white;
+            margin: 4vh 0px 10px 0px;
+        }
+
+        li:hover {
+            background-color: aqua;
+            border-radius: 10px;
+            color: black;
+            padding: 4px;
+        }
+
+        .right nav li,
+        .left li {
+            display: inline-block;
+            margin: 10px 20px;
+            text-transform: uppercase;
+        }
+        a{
+            color:white;
+        }
+        .header {
+            position: relative;
+            background-color: aqua;
+            top: 4;
+            margin-top: 10px;
+
+        }
+
+        .middle {
+            position: relative;
+            text-align: center;
+            margin-top: 15%;
+            margin-right: auto;
+
+
+        }
+
+
+
+        .profile {
+            background-color: aqua;
+            border-radius: 50pc;
+
+            width: 190px;
+            height: 190px;
+            margin: auto
+                /* 
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:10;
+            width: 174px; */
+        }
+
+          .middle h2, .middle
+        h4 {
+            display: flex;
+            justify-content: center;
+            color: white;
+            font-size: x-large;
+            align-items: center;
+            margin: 0px 0px 0px 8px;
+            padding: 0px;
+
+        }
+
+
+        .hire,
+        .download{
+
+            display: inline-flex;
+            font-size: larger;
+            margin-right: auto;
+            background-color: rgb(2, 250, 14);
+            margin-left: 04vmax;
+            margin-top: 8px;
+           
+            padding: 2px 3px;
+            text-decoration: none;
+            border-radius: 12px;
+
+        }
+        a{
+            text-decoration: none;
+        }
+
+
+        .contact {
+
+            text-align: center;
+
+        }
+
+        .contact img {
+            display: inline-block;
+            width: 4%;
+            position: relative;
+            background-color:none;
+             border-radius: 100px;
+            margin-top: -4%;
+            margin-left:2px;
+            margin-bottom: 2%;
+        }
+
+
+        
+        .about {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            border: 1px solid black;
+            /* margin: 100px 0px 0px 50vh; */
+            box-shadow: 4px 4px 7px black;
+        }
+
+        h1 {
+            padding: 2px 10px 19px 50px;
+        }
+
+        .column1 p {
+            padding: 15px 5px 5px 5px;
+            font-size: 20px;
+
+        }
+
+        .column2 {
+            width: 450px;
+            background-color: none;
+            margin-bottom: 20px;
+            padding: 0px 0px 15px 0px;
+        }
+
+        .column2 h1 {
+            font-size: 29px;
+            margin: 10px 0px 0px 0px;
+            padding: 15px 5px 5px 5px;
+
+        }
+
+        .profession {
+            /* margin-top: 20px;
+        display:in; */
+            width: 70%;
+            border: 1px solid black;
+            margin: 60px auto 0px auto;
+            box-shadow: 4px 4px 7px black;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            /* margin-right: auto; */
+        }
+
+        .profession p {
+            font-size: 120%;
+            margin-left: 40px;
+
+        }
+
+        progress {
+            display: inline-block;
+            width: 90%;
+            height: 50px;
+            padding: 0px 5px 0px 0px;
+            margin-left: 38px;
+        }
+
+
+        .portfolio {
+            display: flex;
+            margin-top: 5vh;
+            justify-content: center;
+            margin: 0px 0px 7px 0px;
+            font-weight: 900px;
+            font-family: cursive;
+
+
+            /* margin-left: auto; */
+            /* margin-right: auto; */
+            /* margin-bottom: 1vh; */
+        }
+
+
+
+        .portfolio i {
+            margin: 10px;
+
+        }
+
+        .portfolio i:hover {
+            background-color: blue;
+            padding: 3px 4px 3px 3px;
+            border-radius: 100%;
+        }
+
+        .blog {
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            box-shadow: 4px 4px 7px black;
+        }
+
+        .blog img {
+            width: 42%;
+            margin: 10px 25px;
+        }
+
+        .pro1 {
+            width: 90%;
+            background-size: cover;
+            height: 290px;
+            margin: auto;
+        }
+
+        .pro2 {
+            width: 90%;
+            background-size: cover;
+            height: 290px;
+            margin: 9px auto;
+        }
+
+        .pro1:hover,
+        .pro2:hover {
+            filter: brightness(60%);
+        }
+
+
+        div~p {
+            text-align: center;
+            font-size: x-large;
+            margin: 3% 0% 2% 0%;
+
+        }
+
+        .experi {
+
+            margin: auto;
+            width: 60%;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            margin-bottom: 3%;
+        }
+
+
+        .experi h3 {
+            width: 180px;
+            height: 190px;
+            color: white;
+            background-color: green;
+            display: flex;
+           text-align: center;
+            box-shadow: 4px 4px 7px black;
+            border-radius: 15px 0px 0px 15px;
+            align-items: center;
+            
+
+
+        }
+
+        .experi P {
+            height: 180px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 4px 4px 7px black;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            border-radius: 0px 15px 15px 0px;
+        }
+
+        .experi:hover {
+            filter: brightness(80%)
+        }
+
+        .education {
+            box-shadow: 0px 0px 10px black;
+            width: 60%;
+            margin: auto;
+            display: flex;
+            margin-bottom: 4%;
+            border-radius: 15px;
+            background-color: aqua;
+
+
+        }
+
+        .education .parta {
+            width: 20%;
+            background-color: green;
+            border-radius: 15px 0px 0px 15px;
+            text-align: center;
+            margin: 0px;
+            box-shadow: 4px 4px 7px black;
+            border-radius: 15px 0px 0px 15px;
+            padding: 9% 5px;
+            align-items: center;
+            font-size: larger;
+            color: white;
+        }
+
+        .education .partb {
+            width: 77%;
+            border-radius: 0px 15px 15px 0px;
+            background-color: white;
+            padding: 5px;
+    
+        }
+        .education .partb h4, .education .partb p{
+            margin: auto;
+            text-align: center;
+          margin-top:10px;
+            
+            color:black;
+        }
+
+
+
+        .education:hover {
+            filter: brightness(70%);
+        }
+
+
+
+
+
+        .contact1 {
+            display: flex;
+            margin: auto;
+            /* border: 1px solid greenyellow; */
+            box-shadow: 4px 3px 5px black;
+            width: 60%;
+            background-color: white;
+            padding-bottom: 20px;
+        }
+
+        .contact1>h1 {
+            text-align: center;
+            margin: auto;
+        }
+
+        .contact1>.left1 {
+            /* border: 1px solid black; */
+            color: rgb(0, 0, 0);
+            width: 40%;
+            padding: 12px 10px 5px 10px;
+
+        }
+
+        .contact1>.right1 {
+            /* border:1px solid red; */
+            width: 48%;
+            color: black;
+            padding: 5%;
+
+        }
+
+        input {
+            display: block;
+            margin: 15px 3px;
+            border-radius: 10px;
+            width: 90%;
+            height: 10%;
+            border-color: rgb(219, 219, 219);
+        }
+
+        input[type="submit"] {
+            margin-left: 0;
+            border-radius: 0px;
+            width: 40%;
+            height: 10%;
+            background-color: green;
+            color: white;
+            margin: 15px 2px 29px 5px;
+        }
+
+
+        .bottom {
+            background-image: url("img-4.png");
+            height: 500px;
+            border: 1px solid black;
+            padding: 10%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <ul class="left">
+                <nav>
+                    <li>creative cv </li>
+                </nav>
+            </ul>
+            <ul class="right">
+                <nav>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#portfo">Portfolio</a></li>
+                    <li> <a href="#experience">Experience </a></li>
+                    <li><a href="#contact">Contact </a></li>
+                </nav>
+            </ul>
+        </div>
+        <div class="middle">
+
+            <!--  your image  -->
+
+            <img class="profile" src="profile1.jpg" alt="profile">
+
+            <h2>Mr. Sainath Rajendra Girme</h2>
+            <h4>Front end developer, Desktop Support Engineer, Network Engineer</h4>
+
+            <p class="hire"><a href="#contactme">Hire me</a></p>
+            <p class="download"> <a href="file:///C:/Users/Sai/Desktop/web/Creative%20cv/RESUME_SAINATH_2021.pdf" download="resume.html" target="_blank" rel="noopener noreferrer">Download
+                    CV </a> </p>
+        </div>
+
+    </div>
+
+
+
+
+
+    </div>
+
+
+    <div class="contact">
+
+        <a href="https://www.facebook.com/sainath.girme.3"><img src="facebook1.png" style="width:55px">  </a>
+    <a href="https://www.instagram.com/_sg_dark_wizard_/"> <img src="insta.png"   style="width:70px">  </a>
+    <a href="https://www.linkedin.com/feed/">
+     <img src="linkedin.png" style="width:50px">  </a>
+     <a href="https://twitter.com/sainath_girme">
+     <img src="twitter.jpeg" style="width:50px"> </a>
+
+
+     
+        <!-- <i class="fa fa-instagram" style="font-size:36px"></i>
+        <i class="fa fa-linkedin-square" style="font-size:36px"></i>
+        <i class="fa fa-twitter" style="font-size:36px"></i> -->
+
+
+    </div>
+
+
+    <div class="about" id="about">
+        <table>
+            <tr>
+                <td class="column1">
+                    <h1>About</h1>
+
+                    <p> Hello! I am Sainath Girme. Front end web developer, Network Engineer.</p>
+                    <p>
+                        Creative CV is a HTML resume template for professionals. front hand side website design this
+                        modern and responsive design template is perfect to showcase your portfolio, skills and
+                        experience</p>
+                </td>
+                <td class="column2">
+                    <h1> Basic Information </h1>
+                    <h3>AGE: </h3>
+                    <p>23</p>
+
+                    <h3>EMAIL:</h3>
+                   sainath.girme7@gmail.com, Sainath.girme7@yahoo.com
+
+                    <h3>PHONE:</h3>
+                    +91 9370320475, +91 91581528798
+
+                    <h3>ADDRESS:</h3>
+                    NSTI Mumbai Chunabhati 400022
+
+                    <h3>LANGUAGE:</h3>
+                    English, Marathi, Hindi
+                </td>
+            </tr>
+        </table>
+    </div>
+    <p>Professional Skills</p>
+    <div class="profession" id="skill">
+
+        <p> HTML 50%</p>
+        <progress value="50" max="100">50%</progress>
+
+        <p>CSS 45%</p>
+        <progress value="40" max="100">50%</progress>
+
+        <p>Network Engineer 80%</p>
+        <progress value="70" max="100">50%</progress>
+
+        <p>Desktop Support Engineer 80%</p>
+        <progress value="80" max="100">50%</progress>
+
+        <p>Linux 65%</p>
+        <progress value="65" max="100">50%</progress>
+    </div>
+    <p> Portfolio</p>
+    <div class="portfolio" id="portfo">
+        <i class="fa fa-laptop" style="font-size:48px;color:black"></i>
+        <i class="fa fa-image" style="font-size:39px"></i>
+        <i class="fa fa-camera" style="font-size:36px"></i>
+    </div>
+    <div class="blog">
+        <img class="pro1" src="img-5.jpg" alt="" width="200">
+        <img class="pro2" src="img-6.jpg" alt="" width="200">
+        <img class="pro1" src="img-7.jpg" alt="" width="200">
+        <img class="pro2" src="img-8.jpg" alt="" width="200">
+
+    </div>
+
+    <P>Work Experience</P>
+
+
+
+
+    </div>
+    <div class="experi" id="experience">
+
+        <h3> Desktop Engineer </h3>
+        <p>Shri Saibaba Sansthan Trust, Shirdi December 2020 to December 2021  Ms-Cit Teaching · Computer Hardware · Transmission Control Protocol (TCP) · Dynamic Host Configuration Protocol (DHCP) · Wireless Networking</p>
+
+
+    </div>
+
+    <div class="experi" id="experience">
+
+        <h3> Network Engineer </h3>
+        <p>Flares solar pv system December 2021 to August 2022  Quatation & Design · Domain Name System (DNS) · IPv4 · Transmission Control Protocol (TCP) · Local Area Network (LAN) · Cisco Networking </p>
+
+
+    </div>
+
+    <P>Education</P>
+
+
+
+
+    <div class="education">
+        <div class="parta">
+            <p>2022-2024</p>
+            <h2>ADIT</h2>
+        </div>
+        <div class="partb"> <h4>Advance Diploma in Information Technology</h4>
+        <p>National Skill  Traning Institude Mumbai 400022 </p></div>
+    </div>
+
+    <div class="education">
+        <div class="parta">
+            <p>2018-2020</p>
+            <h2>ITI(COPA)</h2>
+        </div>
+        <div class="partb"> <h4>Indusrtrial Training Institude</h4>
+         <p>Shri Saibaba Pvt Industrial Training Institute, Shirdi</p>
+        </div>
+    </div>
+
+    <div class="education">
+        <div class="parta">
+            <p>2014-2016</p>
+            <h2>HSC</h2>
+        </div>
+        <div class="partb"><h4>Higher Secondary Certificate</h4>
+        <p>Art's Science & Commerce College, Rahata</p>
+    </div>
+    </div>
+
+
+    <div class="education">
+        <div class="parta">
+            <p>2013-2014</p>
+            <h2>SSC</h2>
+        </div>
+        <div class="partb"> <h4>Secondary School Certificate</h4>
+            <P> 
+                 Sharda Vidya Mandir, Rahata
+             </P>
+        </div>
+    </div>
+
+    <div class="bottom" id="contact">
+        <div class="contact1" id="contactme">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="contact1">
+            <div class="left1">
+                <h5> Feel free to contact me</h5>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="text" name="subject" id="subject" placeholder="Subject">
+                <input type="email" name="Email" id="mail" placeholder="Email">
+                <input type="text" name="msg" id="msg" placeholder=" Your Message">
+                <input type="submit" value="submit" onclick="msg()" name="Submit">
+            </div>
+            <div class="right1">
+                <h3>Address</h3>
+                <p>ATI Campus, Boys hostel, 
+                    vasantrao naik marg, Gov 
+                    ATI Chunnabhatti.
+                    400022</p>
+                <h3>Phone</h3>
+                <p>+91 9370320475</p>
+                <h3>Email</h3>
+                <p>sainath.girme7@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function msg()
+        {
+            alert("Your Request Submitted");
+        }
+    </script>
+</body>
+
+</html>
