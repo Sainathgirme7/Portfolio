@@ -73,6 +73,15 @@ html {
     -webkit-tap-highlight-color: transparent
 }
 
+.footer {
+    background-color: #210929;
+    color: #7b0f8795;
+    border: 2px solid #198a92; /* Border color and style */
+    padding: 20px; /* Add some padding to create space between content and the border */
+    border-radius: 30px;
+  }
+
+
 *,
 ::after,
 ::before {
