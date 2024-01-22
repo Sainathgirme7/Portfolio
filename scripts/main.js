@@ -1,15 +1,3 @@
-// chatbot
-  window.watsonAssistantChatOptions = {
-    integrationID: "5ef48e0f-1ceb-4a33-87c1-f2ae64c3bb53", // The ID of this integration.
-    region: "eu-gb", // The region your integration is hosted in.
-    serviceInstanceID: "6e036bae-2f37-4004-8f3c-ef4f1df878f6", // The ID of your service instance.
-    onLoad: async (instance) => { await instance.render(); }
-  };
-  setTimeout(function(){
-    const t=document.createElement('script');
-    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-    document.head.appendChild(t);
-  });
 
 // Add your javascript here
 // Don't forget to add it into respective layouts where this js file is needed
