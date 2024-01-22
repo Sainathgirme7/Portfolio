@@ -18,7 +18,19 @@
         }
       </style>
     </noscript>
-    
+    <script> 
+  window.watsonAssistantChatOptions = { 
+    integrationID: "a1e6fb1d-3f0c-4f66-a55f-a34aa3b83d9a", // The ID of this integration. 
+    region: "eu-gb", // The region your integration is hosted in. 
+    serviceInstanceID: "41ffa6c6-1683-4d47-9b0f-9d722001f84f", // The ID of your service instance. 
+    onLoad: async (instance) => { await instance.render(); } 
+  }; 
+  setTimeout(function(){ 
+    const t=document.createElement('script'); 
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"; 
+    document.head.appendChild(t); 
+  }); 
+</script>
   </head>
   <body id="top">
     <header>
@@ -449,21 +461,6 @@
         <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://www.linkedin.com/in/sainath-girme-9582291b2/" target="_blank">MR SAINATH RAJENDRA GIRME</a></p>
       </div>
     </footer>
-
-
-  <script>
-  window.watsonAssistantChatOptions = {
-    integrationID: "5ef48e0f-1ceb-4a33-87c1-f2ae64c3bb53", // The ID of this integration.
-    region: "eu-gb", // The region your integration is hosted in.
-    serviceInstanceID: "6e036bae-2f37-4004-8f3c-ef4f1df878f6", // The ID of your service instance.
-    onLoad: async (instance) => { await instance.render(); }
-  };
-  setTimeout(function(){
-    const t=document.createElement('script');
-    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-    document.head.appendChild(t);
-  });
-</script>
     <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
     <script src="js/core/popper.min.js?ver=1.1.0"></script>
     <script src="js/core/bootstrap.min.js?ver=1.1.0"></script>
